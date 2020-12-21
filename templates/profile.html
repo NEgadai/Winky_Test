@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+
+        {%for movie in Movies%}
+            {% for key, value in movie.items() %}
+                <p>{{value}}</p>
+            {%endfor%}
+        {%endfor%}
+
+    </body>
+</html>
