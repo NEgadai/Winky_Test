@@ -67,7 +67,7 @@ def scrap(url: str):
     for movie in obj:
         temp = {}
         temp['name'] = movie['im:name']['label']
-        # temp['rating'] = get_rating(movie['id']['label'])
+        temp['rating'] = get_rating(movie['id']['label'])
         pics = movie['im:image']
         images = []
         for pic in pics:
